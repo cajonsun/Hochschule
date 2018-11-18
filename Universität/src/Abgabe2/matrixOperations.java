@@ -10,7 +10,7 @@ package Abgabe2;
 public class matrixOperations {
 
 	/**
-	 * Gibt die einzelnen Werte einer Matrix aus
+	 * Gibt die einzelnen Werte eines Arrays aus
 	 * 
 	 * @param array
 	 */
@@ -27,7 +27,7 @@ public class matrixOperations {
 	}
 
 	/**
-	 * Methode, um eine Matrix beliebiger Größe mit zufälligen
+	 * Methode, um ein Array beliebiger Größe mit zufälligen
 	 * Zahlenwerten zu erstellen und zurückzugeben
 	 * 
 	 * @param array
@@ -54,7 +54,7 @@ public class matrixOperations {
 	}
 
 	/**
-	 * Addition von Matrizen
+	 * Addition von Arrays
 	 * 
 	 * @param array1
 	 * @param array2
@@ -63,13 +63,13 @@ public class matrixOperations {
 	public static int[][] arrayAddition(int[][] array1, int[][] array2) {
 		int[][] array3;
 		
-		//Abfrage, ob die erste Matrix genauso viele Zeilen wie
-		//die zweite Matrix hat und genau dasselbe mit den Spalten
+		//Abfrage, ob das erste Array genauso viele Zeilen wie
+		//das zweite Array hat und genau dasselbe mit den Spalten
 		if (array1.length == array2.length && array1[0].length == array2[0].length) {
 			
 			array3 = new int[array1.length][array1[0].length];
 			
-			//Addition der einzelnen Werte der Matrizen
+			//Addition der einzelnen Werte der Arrays
 			for (int i = 0; i < array1.length; i++) { // Länge der Zeilen von Array1
 				for (int j = 0; j < array1[0].length; j++) { // Länge der Spalten von Array1
 
@@ -85,7 +85,7 @@ public class matrixOperations {
 	}
 
 	/**
-	 * Multiplikation von Matrizen
+	 * Multiplikation von Arrays
 	 * 
 	 * @param array1
 	 * @param array2
@@ -95,7 +95,7 @@ public class matrixOperations {
 
 		int[][] array3;
 		
-		//Abfrage, ob Matrix1 genauso viele Zeilen hat wie Matrix2 Spalten
+		//Abfrage, ob array1 genauso viele Zeilen hat wie array2 Spalten
 		if (array2[0].length == array1.length) {
 
 			array3 = new int[array1.length][array2[0].length]; 	// array3 hat die Zeilenlänge von array1
