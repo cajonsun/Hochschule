@@ -16,7 +16,7 @@ public class matrixOperations {
 	 */
 	public static void ausgabeArray(int[][] array) {
 		
-		//Ausgabe jedes Wertes der Matrix
+		//Ausgabe jedes Wertes des Arrays
 		for (int i = 0; i < array.length; i++) {
 			for (int j = 0; j < array[0].length; j++) {
 				System.out.print(array[i][j] + " ");
@@ -36,7 +36,7 @@ public class matrixOperations {
 	public static int[][] randomArrayZahlenwerte(int n, int m) {
 		int[][] array;
 
-		// Erstellung von Radom Zahlenwerten in der Matrix
+		// Erstellung von Radom Zahlenwerten in dem Array
 		if (n > 0 && m > 0) {
 
 			array = new int[n][m];
