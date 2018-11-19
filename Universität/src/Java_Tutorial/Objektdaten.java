@@ -43,7 +43,7 @@ public class Objektdaten {
 		// Aufgabe 4
 
 		String str3 = new String("Golf is a good walk spoiled.");
-		String sub = str3.substring(8); // erzeugt ein neues Objekt aus dem Original
+		String sub = str3.substring(5,6); // erzeugt ein neues Objekt aus dem Original
 		String sub1 = str3.substring(5);
 		String sub2 = str3.substring(3, str3.length() - 5);
 
