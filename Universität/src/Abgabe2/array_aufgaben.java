@@ -1,7 +1,8 @@
 package Abgabe2;
 
 /**
- * Aufgabe1 zu Arrays und Schleifen von Labor 4  
+ * Aufgaben zu Arrays und Schleifen:
+ * Aufgabe 1   
  * @author Ole Jacobsen
  * 
  */
@@ -20,6 +21,7 @@ public class array_aufgaben {
 			
 			//Ausgabe des Inhaltes der Arrays
 			System.out.print("Inhalt des Array1: ");
+			wertDeklaration(array1);
 			ausgabe(array1);
 			System.out.print("\nInhalt des Array2: ");
 			ausgabe(array2);
@@ -32,7 +34,8 @@ public class array_aufgaben {
 			}
 			
 			//Der Inhalt von Array1 wird in Array2 kopiert
-			System.arraycopy(array1, 0, array2, 0, array1.length);		//array1 wird ab der stelle null in array 2 gespeichert auch ab dder stelle null für die länge von array1 	
+			System.arraycopy(array1, 0, array2, 0, array1.length);		//array1 wird ab der stelle null in array 2 gespeichert.
+																		//Und zwar auch ab der Stelle null für die Länge von array1 	
 			System.out.print("\nInhalt des Array2: ");
 			ausgabe(array2);
 					
@@ -44,9 +47,19 @@ public class array_aufgaben {
 		 */
 		public static void ausgabe(int[] array) {
 			for (int i = 0; i < array.length; i++) {
-				array[i] = i;
 				System.out.print(array[i]+" ");
 			}
 		}
+		
+		/**
+		 * Ändert die einzelnen Werte des Arrays
+		 * @param array
+		 */
+		public static void wertDeklaration(int[] array) {
+			for (int i = 0; i < array.length; i++) {
+				array[i] = i;
+			}
+		}
+		
 
 }

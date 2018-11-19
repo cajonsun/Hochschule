@@ -1,7 +1,8 @@
 package Abgabe2;
 /**
- * Labor 4 Aufgabe 2 Ausgabe aller Primzahlen nach dem Prinzip des "Sieb des Eratosthenes"
- * @author Ole
+ * Aufgaben zu Arrays und Schleifen:
+ * Aufgabe 2
+ * @author Ole Jacobsen
  *
  */
 public class primzahlen {
@@ -18,7 +19,7 @@ public class primzahlen {
 		int i,j;
 		primzahlen = new boolean[max+1];
 		
-		// alle Werte on dem Array werden auf True gesetzten
+		// alle Werte on dem Array werden auf true gesetzten
 		for (i = 0; i<max+1; i++) {
 			primzahlen[i] = true;	
 		}

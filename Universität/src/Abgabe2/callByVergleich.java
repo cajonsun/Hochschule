@@ -1,11 +1,8 @@
 package Abgabe2;
 
 /**
- * Labor 5 Aufgabe 2 zu Kapitel 7 Unterschiede zwischen call by value und call
- * by reference
- * 
- * @author Ole
- *
+ * Aufgabe 2 zu Kapitel 7
+ * @author Ole Jacobsen
  */
 public class callByVergleich {
 

@@ -1,7 +1,11 @@
 package Abgabe2;
-
+/**
+ * Aufgabe zu Kapitel 5
+ * @author Ole Jacobsen
+ *
+ */
 public class nebeneffekt {
-
+	
 	public static void main(String[] args) {
 		int[] array = new int[] {1,2,3};
 		int position = 2;
@@ -17,7 +21,7 @@ public class nebeneffekt {
 	
 	/**
 	 * Rückgabe des Wertes  des Arrays an eingegebener 
-	 * Position addiert mit 7 ohne das Array zu ändern
+	 * Position addiert mit 7 ohne Änderung des Arrays
 	 * @param array
 	 * @param position
 	 * @return

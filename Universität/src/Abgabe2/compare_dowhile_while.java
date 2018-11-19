@@ -1,9 +1,9 @@
 package Abgabe2;
 /**
- * Labor 5 Aufgabe 6 Vergleich der doWhile Schleife und der While Schleife
- * @author oleja
+ * Aufgabe zu Kapitel 6
+ * @author Ole Jacobsen
  */
-import java.util.*;
+import java.util.Scanner;
 
 public class compare_dowhile_while {
 	
@@ -11,12 +11,17 @@ public class compare_dowhile_while {
 		loopWhile1();
 		loopDoWhile1();		
 	}
-		
+	
+	/**
+	 * Eingabe eines Passworts und Überprüfung,
+	 * ob es richtig oder falsch ist. Mit einer
+	 * While-SChleife gelöst
+	 */
 	public static void loopWhile1() {
 		
 		Boolean passwortAbfrage =false;
 		System.out.println("Whileschleife"+"\nGeben Sie das Passwort ein: ");		
-		
+	
 		while(passwortAbfrage == false) {
 
 			Scanner scan = new Scanner(System.in);
@@ -29,14 +34,23 @@ public class compare_dowhile_while {
 			}
 			else {
 				System.out.println("Das Passwort war falsch. \nGeben sie ein neues ein: ");	
-			}			
+			}	
+			
+			
 		}
+		
 	}
 	
+	/**
+	 * Eingabe eines Passworts und Überprüfung,
+	 * ob es richtig oder falsch ist. Mit einer
+	 * Do-Whileschleife gelöst
+	 */
 	public static void loopDoWhile1() {
 		
 		Boolean passwortAbfrage =false;
 		System.out.println("\nDo-Whileschleife"+"\nGeben Sie das Passwort ein: ");		
+		
 		
 		do {
 
@@ -50,29 +64,15 @@ public class compare_dowhile_while {
 			}
 			else {
 				System.out.println("Das Passwort war falsch. \nGeben sie ein neues ein: ");	
-			}			
+			}
+						
 		}			
-		while(passwortAbfrage == false);			
+		while(passwortAbfrage == false);
+		
+		
 	}
 }	
 
-/*	public static void loopDoWhile2() {
-		int a = 0;
-		System.out.println("Anfangswert von a ist: "+a);
-		do a = a+1;
-		while(a==1);
-		
-		System.out.println("Neuer Wert von a ist: "+a);		
-	}
 	
-	public static void loopWhile2() {
-		int b = 0;
-		System.out.println("Anfangswert von b ist: "+b);
-		while (b == 1) {
-			b = b+1;
-		}
-		System.out.println("Neuer Wert von b ist: "+b);
-	}
-*/	
 
 

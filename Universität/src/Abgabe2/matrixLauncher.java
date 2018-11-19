@@ -1,12 +1,8 @@
 package Abgabe2;
 
 /**
- * Labor 5 Aufgabe 1 zu Kapitel 7 Eingabe der Matrixdiemensionen
- * über Tastatur durch den Benutzer, Initialisierung der Matrizen
- * Ausführung der Matrixoperationen zum Addieren und Multiplizieren
- * Ausgabe der Ergebnisse am Bildschirm 
- * 
- * @author Ole
+ * Aufgabe 1 zu Kapitel 7 II
+ * @author Ole Jacobsen
  */
 import java.util.Scanner;
 
@@ -47,7 +43,7 @@ public class matrixLauncher {
 		array1 = matrixOperations.randomArrayZahlenwerte(n1, m1);
 		array2 = matrixOperations.randomArrayZahlenwerte(n2, m2);
 		
-		//Augabe der Matrizen 1 und 2
+		//Ausgabe der Matrizen 1 und 2
 		System.out.println("\nMatrix 1: ");
 		matrixOperations.ausgabeArray(array1);
 		System.out.println("Matrix 2: ");
