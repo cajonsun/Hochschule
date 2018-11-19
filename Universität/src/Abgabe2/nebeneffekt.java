@@ -3,7 +3,7 @@ package Abgabe2;
 public class nebeneffekt {
 
 	public static void main(String[] args) {
-		int[] array = new int[] {1,2,3};
+		/*int[] array = new int[] {1,2,3};
 		int position = 2;
 		int a;
 		
@@ -12,7 +12,9 @@ public class nebeneffekt {
 		
 		aenderung(array, position);
 		System.out.println("Wert von Array an der Position 3: "+array[position]);
+	*/
 		
+	inkrement();
 	}
 	
 	/**
@@ -49,6 +51,17 @@ public class nebeneffekt {
 		int a = array[position];
 		return a;
 		//return array[position];
+	}
+	
+	public static void inkrement() {
+		int i = 2;
+		int k = --i+i;
+		System.out.println("Wert von k: "+k);
+		int j = (i=3)*(i++ + --k);
+		System.out.println("Wert von j: "+j+" Wert von k: "+k);
+		System.out.println("Wert von i: "+i);
+		
+		
 	}
 	
 	
