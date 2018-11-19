@@ -3,26 +3,21 @@ package Abgabe2;
 public class nebeneffekt {
 
 	public static void main(String[] args) {
-		/*int[] array = new int[] {1,2,3};
+		int[] array = new int[] {1,2,3};
 		int position = 2;
 		int a;
 		
 		a = rueck(array, position);
-		System.out.println("Wert von Array an der Position 3: "+array[position]+"  und Wert a ist: "+a);
+		System.out.println("Ohne Nebeneffekt"+"\nWert von Array an der Position 3: "+array[position]+"  und Wert a ist: "+a);
 		
 		aenderung(array, position);
-		System.out.println("Wert von Array an der Position 3: "+array[position]);
-	*/
-		
-	inkrement();
+		System.out.println("Mit Nebeneffekt"+"\nWert von Array an der Position 3: "+array[position]+" und Wert a ist: "+a);
+	
 	}
 	
 	/**
-	 * Rueck speichert den neu errechneten Wert in einer 
-	 * anderen Variablen und verändert das Array an sich
-	 * nicht. Es gibt also keinen Nebeneffekt, weil das Array
-	 * an sich gleich bleibt, obwohl mit einem wert aus
-	 * dem Array gerechnet wurde
+	 * Rückgabe des Wertes  des Arrays an eingegebener 
+	 * Position addiert mit 7 ohne das Array zu ändern
 	 * @param array
 	 * @param position
 	 * @return
@@ -34,12 +29,9 @@ public class nebeneffekt {
 	}
 	
 	/**
-	 * aenderung speichert den neu errechneten Wert direkt  
-	 * an derselben Stelle, auf die auch zugegriffen wurde
-	 * und überschreibt somit auch den vorheriegen wert, der
-	 * an dieser Stelle vorher definiert war. Also rechne ich 
-	 * hier auch mit einem Wert aus dem Array und habe aber
-	 * auch als Nebeneffekt, dass dieser Wert dann dauerhaft
+	 * Rückgabe des Wertes  des Arrays an eingegebener 
+	 * Position addiert mit 7 mit Änderung des Arrays 
+	 * an der zugewiesenen Position
 	 * geändert wird
 	 * @param array
 	 * @param position
@@ -50,19 +42,6 @@ public class nebeneffekt {
 		array[position] = array[position]+7;
 		int a = array[position];
 		return a;
-		//return array[position];
 	}
-	
-	public static void inkrement() {
-		int i = 2;
-		int k = --i+i;
-		System.out.println("Wert von k: "+k);
-		int j = (i=3)*(i++ + --k);
-		System.out.println("Wert von j: "+j+" Wert von k: "+k);
-		System.out.println("Wert von i: "+i);
-		
-		
-	}
-	
 	
 }

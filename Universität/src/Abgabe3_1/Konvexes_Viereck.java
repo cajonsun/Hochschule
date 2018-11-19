@@ -6,4 +6,8 @@ public class Konvexes_Viereck extends Viereck {
 	public Konvexes_Viereck(int A,int B) {super(A, B);}
 	
 	public Konvexes_Viereck() {super();}
+	
+	public void eigenschaften()  {
+		System.out.println("Die beiden Diagonaalen liegen innerhalb des Vierecks");
+	}
 }
