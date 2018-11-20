@@ -29,7 +29,7 @@ public class matrixOperations {
 	 * 
 	 * @param n Größe für die Zeilenanzahl
 	 * @param m Größe für die Spaltenanzahl
-	 * @return array Das neu generierte Array wird zurückgegeben
+	 * @return array - Das neu generierte Array wird zurückgegeben
 	 */
 	public static int[][] randomArrayZahlenwerte(int n, int m) {
 		int[][] array;
@@ -56,7 +56,7 @@ public class matrixOperations {
 	 * 
 	 * @param array1 Vorderes Array für die Addition 
 	 * @param array2  Hinteres array für die Addition 
-	 * @return array3 Das neu enstandene Array aus der Addition von array1 und array2
+	 * @return array3 - Das neu enstandene Array aus der Addition von array1 und array2
 	 */
 	public static int[][] arrayAddition(int[][] array1, int[][] array2) {
 		int[][] array3;
@@ -88,7 +88,7 @@ public class matrixOperations {
 	 * 
 	 * @param array1 Vorderes Array für die Multiplikation
 	 * @param array2 Hinteres array für die Multiplikation
-	 * @return array3 Das neu enstandene Array aus der Multiplikation von array1 und array2
+	 * @return array3 - Das neu enstandene Array aus der Multiplikation von array1 und array2
 	 */
 	public static int[][] arrayMulti(int[][] array1, int[][] array2) {
 
