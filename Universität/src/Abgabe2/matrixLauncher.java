@@ -1,11 +1,11 @@
 package Abgabe2;
 
+import java.util.Scanner;
+
 /**
  * Aufgabe 1 zu Kapitel 7 II
  * @author Ole Jacobsen
  */
-import java.util.Scanner;
-
 public class matrixLauncher {
 
 	public static void main(String[] args) {

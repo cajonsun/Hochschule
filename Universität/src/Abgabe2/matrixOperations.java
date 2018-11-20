@@ -9,7 +9,7 @@ public class matrixOperations {
 	/**
 	 * Gibt die einzelnen Werte eines Arrays aus
 	 * 
-	 * @param array
+	 * @param array Ist das eingegebene Array, welches Ausgegeben werden soll
 	 */
 	public static void ausgabeArray(int[][] array) {
 		
@@ -22,12 +22,14 @@ public class matrixOperations {
 		System.out.println();
 	}
 
+
 	/**
 	 * Methode, um ein Array beliebiger Größe mit zufälligen
 	 * Zahlenwerten zu erstellen und zurückzugeben
 	 * 
-	 * @param array
-	 * @return 
+	 * @param n Größe für die Zeilenanzahl
+	 * @param m Größe für die Spaltenanzahl
+	 * @return array Das neu generierte Array wird zurückgegeben
 	 */
 	public static int[][] randomArrayZahlenwerte(int n, int m) {
 		int[][] array;
@@ -52,9 +54,9 @@ public class matrixOperations {
 	/**
 	 * Addition von Arrays
 	 * 
-	 * @param array1
-	 * @param array2
-	 * @return 
+	 * @param array1 Vorderes Array für die Addition 
+	 * @param array2  Hinteres array für die Addition 
+	 * @return array3 Das neu enstandene Array aus der Addition von array1 und array2
 	 */
 	public static int[][] arrayAddition(int[][] array1, int[][] array2) {
 		int[][] array3;
@@ -84,9 +86,9 @@ public class matrixOperations {
 	/**
 	 * Multiplikation von Arrays
 	 * 
-	 * @param array1
-	 * @param array2
-	 * @return
+	 * @param array1 Vorderes Array für die Multiplikation
+	 * @param array2 Hinteres array für die Multiplikation
+	 * @return array3 Das neu enstandene Array aus der Multiplikation von array1 und array2
 	 */
 	public static int[][] arrayMulti(int[][] array1, int[][] array2) {
 
