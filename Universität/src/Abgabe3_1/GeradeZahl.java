@@ -2,17 +2,14 @@ package Abgabe3_1;
 
 
 public class GeradeZahl {
-	int zahl;
-	int grenzeMin = Integer.MIN_VALUE;
-	int grenzeMax = Integer.MAX_VALUE;	
+	int zahl;	
 	
-	
-	public GeradeZahl(int zahl) throws Exception {
+	public GeradeZahl(int zahl) throws ZahlException {
 //		try {
 			if (zahl%2 == 0) {
 				this.zahl = zahl;
 			} else {
-				throw new Exception();
+				throw new ZahlException(ZahlException.UNGERADE);
 			}
 /*		}
 		catch(Exception e) {
