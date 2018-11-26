@@ -1,6 +1,5 @@
 package Abgabe3_1;
 
-
 public class GeradeZahl {
 	int zahl;	
 	
