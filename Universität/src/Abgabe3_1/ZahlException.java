@@ -16,6 +16,9 @@ public class ZahlException extends Exception {
 		switch(typ) {
 		case 1: txt = "Die Zahl ist ungerade";
 				break;
+		case 2: txt = "Die Zahl ist nicht im angegebenen Bereich";
+				break;
+		default: txt ="Es ist ein unbekannter Fehler aufgetreten";
 		}
 		
 		return txt;
