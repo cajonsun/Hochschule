@@ -2,35 +2,29 @@ package Abgabe3_1;
 
 public class GeradeZahl {
 	int zahl;	
+	int bereichMin = 5;
+	int bereichMax = 50;
 	
 	public GeradeZahl(int zahl) throws ZahlException {
-//		try {
+		if (zahl>=bereichMin && zahl<=bereichMax) {		 	
 			if (zahl%2 == 0) {
 				this.zahl = zahl;
 			} else {
 				throw new ZahlException(ZahlException.UNGERADE);
 			}
-/*		}
-		catch(Exception e) {
-			System.out.println(e.getMessage());
+		} else {
+			throw new ZahlException(ZahlException.BEREICH);
 		}
-*/			
 	}
 	
-	public GeradeZahl add(GeradeZahl gz2) throws Exception {
+	public GeradeZahl add(GeradeZahl gz2) throws ZahlException {
 		int erg = zahl+gz2.zahl;		
 		GeradeZahl ergebnis = new GeradeZahl(erg);
 		return ergebnis;
 	}
 	
-	public GeradeZahl mult(GeradeZahl gz2) {
-		GeradeZahl ergebnis = null;
-		try {
-			ergebnis = new GeradeZahl(zahl*gz2.zahl);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public GeradeZahl mult(GeradeZahl gz2) throws ZahlException {
+		GeradeZahl	ergebnis = new GeradeZahl(zahl*gz2.zahl);
 		return ergebnis;
 	}
 
