@@ -44,7 +44,7 @@ public class ScannerViereck {
 				Parallelogramm p = new Parallelogramm(z1,z2);
 				return p;
 			}
-			else if (txt.equals("kv")) {
+			else if (txt.equals("re")) {
 				Rechteck re = new Rechteck(z1,z2);
 				return re;
 			}
