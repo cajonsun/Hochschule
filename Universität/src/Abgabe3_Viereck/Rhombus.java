@@ -19,7 +19,7 @@ public class Rhombus extends Parallelogramm {
 	}
 	
 	public void print() {
-		System.out.println("Die Seitenlängen des "+name+" sind:");
+		System.out.println("\nDie Seitenlänge des "+name+" ist:");
 		System.out.println("A: "+seiteA);
 	}
 }

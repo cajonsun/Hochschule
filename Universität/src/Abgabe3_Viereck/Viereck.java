@@ -53,7 +53,7 @@ public class Viereck {
 	}
 	
 	public void print() {
-		System.out.println("Die Seitenlängen des "+name+" sind:");
+		System.out.println("\nDie Seitenlängen des "+name+" sind:");
 		System.out.println("A: "+seiteA+"\tB: "+seiteB);
 		System.out.println("C: "+seiteC+"\tD: "+seiteD);
 	}
