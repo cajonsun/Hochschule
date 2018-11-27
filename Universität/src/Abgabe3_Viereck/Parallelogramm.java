@@ -1,7 +1,7 @@
 package Abgabe3_Viereck;
 
 public class Parallelogramm extends Trapez {
-	public Parallelogramm(int A, int B) {super(A, B);}
+	public Parallelogramm(int A, int B) throws ViereckException {super(A, B);}
 
 	public Parallelogramm() {super();}
 

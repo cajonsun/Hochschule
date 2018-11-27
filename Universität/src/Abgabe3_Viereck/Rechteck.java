@@ -1,9 +1,7 @@
 package Abgabe3_Viereck;
 
 public class Rechteck extends Parallelogramm {
-	public Rechteck(int A, int B) {
-		super(A, B);
-	}
+	public Rechteck(int A, int B) throws ViereckException {super(A, B);}
 
 	public Rechteck() {super();}
 
