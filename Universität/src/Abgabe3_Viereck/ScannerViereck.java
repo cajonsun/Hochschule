@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class ScannerViereck {
 	static int z1, z2, z3, z4;
+	static String name;
 	
 	public static  Viereck Scan(String txt) throws ViereckException {
 		Scanner s =  new Scanner(System.in);
@@ -20,15 +21,18 @@ public class ScannerViereck {
 			z4 = s.nextInt();
 
 			if (txt.equals("v")) {
-				Viereck v = new Viereck(z1,z2,z3,z4);
+				name = "Viereck";
+				Viereck v = new Viereck(z1,z2,z3,z4,name);
 				return v;
 			}
 			else if (txt.equals("kv")) {
-				Konvexes_Viereck kv = new Konvexes_Viereck(z1,z2,z3,z4);
+				name = "Konvexes Viereck";
+				Konvexes_Viereck kv = new Konvexes_Viereck(z1,z2,z3,z4,name);
 				return kv;
 			}
 			else if (txt.equals("t")) {
-				Trapez t = new Trapez(z1,z2,z3,z4);
+				name = "Trapez";
+				Trapez t = new Trapez(z1,z2,z3,z4,name);
 				return t;
 			}
 		}
@@ -41,26 +45,31 @@ public class ScannerViereck {
 			z2 = s.nextInt();
 			
 			if (txt.equals("p")) {
-				Parallelogramm p = new Parallelogramm(z1,z2);
+				name = "Parallelogramm";
+				Parallelogramm p = new Parallelogramm(z1,z2,name);
 				return p;
 			}
 			else if (txt.equals("re")) {
-				Rechteck re = new Rechteck(z1,z2);
+				name = "Rechteck";
+				Rechteck re = new Rechteck(z1,z2,name);
 				return re;
 			}
 		}
 		
 		if (txt.equals("rh") || txt.equals("q")) {
+			
 			System.out.println("Geben Sie 1 Zahlen ein");
 			System.out.print("Zahl1: ");
 			z1 = s.nextInt();
 			
 			if (txt.equals("rh")) {
-				Rhombus p = new Rhombus(z1);
+				name = "Rhombus";
+				Rhombus p = new Rhombus(z1,name);
 				return p;
 			}
 			else if (txt.equals("q")) {
-				Quadrat q = new Quadrat(z1);
+				name = "Quadrat";
+				Quadrat q = new Quadrat(z1,name);
 				return q;
 			}
 		}
