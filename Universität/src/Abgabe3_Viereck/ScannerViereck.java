@@ -1,5 +1,6 @@
 package Abgabe3_Viereck;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ScannerViereck {
@@ -11,33 +12,38 @@ public class ScannerViereck {
 		
 		if (txt.equals("v") ||txt.equals("kv") || txt.equals("t") ) {
 			System.out.println("Geben Sie 4 Zahlen ein");
-			System.out.print("Zahl1: ");
-			z1 = s.nextInt();
-			System.out.print("Zahl2: ");
-			z2 = s.nextInt();
-			System.out.print("Zahl3: ");
-			z3 = s.nextInt();
-			System.out.print("Zahl4: ");
-			z4 = s.nextInt();
-			if (z1>0 && z2>0 && z3>0 && z4>0) {
-				if (txt.equals("v")) {
-					name = "Viereck";
-					Viereck v = new Viereck(z1,z2,z3,z4,name);
-					return v;
+			try {
+				System.out.print("Zahl1: ");
+				z1 = s.nextInt();
+				System.out.print("Zahl2: ");
+				z2 = s.nextInt();
+				System.out.print("Zahl3: ");
+				z3 = s.nextInt();
+				System.out.print("Zahl4: ");
+				z4 = s.nextInt();	
+
+				if (z1>0 && z2>0 && z3>0 && z4>0) {
+					if (txt.equals("v")) {
+						name = "Viereck";
+						Viereck v = new Viereck(z1,z2,z3,z4,name);
+						return v;
+					}
+					else if (txt.equals("kv")) {
+						name = "Konvexes Viereck";
+						Konvexes_Viereck kv = new Konvexes_Viereck(z1,z2,z3,z4,name);
+						return kv;
+					}
+					else if (txt.equals("t")) {
+						name = "Trapez";
+						Trapez t = new Trapez(z1,z2,z3,z4,name);
+						return t;
+					}
 				}
-				else if (txt.equals("kv")) {
-					name = "Konvexes Viereck";
-					Konvexes_Viereck kv = new Konvexes_Viereck(z1,z2,z3,z4,name);
-					return kv;
+				else {
+					throw new ViereckException(ViereckException.NEGATIV);
 				}
-				else if (txt.equals("t")) {
-					name = "Trapez";
-					Trapez t = new Trapez(z1,z2,z3,z4,name);
-					return t;
-				}
-			}
-			else {
-				throw new ViereckException(ViereckException.NEGATIV);
+			} catch (InputMismatchException ex) {
+				ex.printStackTrace();
 			}
 		}
 		

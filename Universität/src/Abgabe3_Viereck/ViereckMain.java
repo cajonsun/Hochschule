@@ -24,5 +24,6 @@ public class ViereckMain {
 			ex.printStackTrace();
 		}
 		scan.close();
+		System.out.println("Hannes riecht am Klodeckel");
 	}
 }
