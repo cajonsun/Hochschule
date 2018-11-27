@@ -1,4 +1,4 @@
-package Abgabe3_1;
+package Abgabe3_GeradeZahl;
 
 public class ZahlException extends Exception {
 

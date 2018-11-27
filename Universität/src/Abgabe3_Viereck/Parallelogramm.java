@@ -1,4 +1,4 @@
-package Abgabe3_1;
+package Abgabe3_Viereck;
 
 public class Parallelogramm extends Trapez {
 	public Parallelogramm(int A, int B) {super(A, B);}

@@ -1,4 +1,4 @@
-package Abgabe3_1;
+package Abgabe3_Viereck;
 
 public class Rechteck extends Parallelogramm {
 	public Rechteck(int A, int B) {

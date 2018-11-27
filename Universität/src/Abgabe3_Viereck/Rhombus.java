@@ -1,4 +1,4 @@
-package Abgabe3_1;
+package Abgabe3_Viereck;
 
 public class Rhombus extends Parallelogramm {
 	public Rhombus(int A) {

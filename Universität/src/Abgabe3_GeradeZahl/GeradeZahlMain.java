@@ -1,4 +1,4 @@
-package Abgabe3_1;
+package Abgabe3_GeradeZahl;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

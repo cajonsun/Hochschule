@@ -1,4 +1,4 @@
-package Abgabe3_1;
+package Abgabe3_Viereck;
 
 public class Konvexes_Viereck extends Viereck {
 	public Konvexes_Viereck(int A, int B, int C, int D) {super(A, B, C, D);}

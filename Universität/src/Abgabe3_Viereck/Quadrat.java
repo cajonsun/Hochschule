@@ -1,4 +1,4 @@
-package Abgabe3_1;
+package Abgabe3_Viereck;
 
 public class Quadrat extends Rhombus {
 	public Quadrat(int A) {super(A);}
