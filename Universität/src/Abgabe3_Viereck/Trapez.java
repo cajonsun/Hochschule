@@ -8,8 +8,8 @@ public class Trapez extends Konvexes_Viereck {
 	
 	public Trapez() {super();}
 	
-	public void eigenschaften()  {
+	public void eigenschaften() {
 		super.eigenschaften();
-		System.out.println("Zwei Seiten sind parallel");
+		System.out.println("-Zwei Seiten sind parallel");
 	}
 }

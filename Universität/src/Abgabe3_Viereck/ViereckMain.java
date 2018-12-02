@@ -31,7 +31,8 @@ public class ViereckMain {
 
 				V.print();
 				System.out.println("Der Umfang des "+V.name+" ist "+V.umfang());
-				V.flaeche();	
+				V.flaeche();
+				V.eigenschaften();	
 			}
 
 		}

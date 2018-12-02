@@ -57,4 +57,6 @@ public class Viereck {
 		System.out.println("A: "+seiteA+"\tB: "+seiteB);
 		System.out.println("C: "+seiteC+"\tD: "+seiteD);
 	}
+	
+	public void eigenschaften() {}
 }
