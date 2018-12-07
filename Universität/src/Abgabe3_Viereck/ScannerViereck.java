@@ -7,7 +7,7 @@ public class ScannerViereck {
 	static int z1, z2, z3, z4;
 	static String name;
 	
-	public static  Viereck Scan(String txt) throws ViereckException {
+	public static  Viereck scan(String txt) throws ViereckException {
 		Scanner s =  new Scanner(System.in);
 		
 		if (txt.equals("v") ||txt.equals("kv") || txt.equals("t") ) {
