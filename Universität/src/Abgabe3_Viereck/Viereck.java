@@ -2,12 +2,12 @@ package Abgabe3_Viereck;
 
 import Abgabe3_GeradeZahl.ZahlException;
 
-public class Viereck {
+public abstract class Viereck {
 
-	protected int seiteA;
-	protected int seiteB;
-	protected int seiteC;
-	protected int seiteD;
+	int seiteA;
+	int seiteB;
+	int seiteC;
+	int seiteD;
 	String name;
 
 	public Viereck(int A, int B, int C, int D, String name) throws ViereckException {

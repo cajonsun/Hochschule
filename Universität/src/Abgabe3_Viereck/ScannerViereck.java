@@ -23,12 +23,13 @@ public class ScannerViereck {
 				z4 = s.nextInt();	
 
 				if (z1>0 && z2>0 && z3>0 && z4>0) {
-					if (txt.equals("v")) {
-						name = "Viereck";
-						Viereck v = new Viereck(z1,z2,z3,z4,name);
-						return v;
-					}
-					else if (txt.equals("kv")) {
+//					if (txt.equals("v")) {
+//						name = "Viereck";
+//						Viereck v = new Viereck(z1,z2,z3,z4,name);
+//						return v;
+//					}
+//					else 
+						if (txt.equals("kv")) {
 						name = "Konvexes Viereck";
 						Konvexes_Viereck kv = new Konvexes_Viereck(z1,z2,z3,z4,name);
 						return kv;
