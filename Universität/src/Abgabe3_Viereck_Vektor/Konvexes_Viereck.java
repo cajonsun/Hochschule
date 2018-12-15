@@ -5,7 +5,7 @@ public class Konvexes_Viereck extends Viereck {
 
 //	public Konvexes_Viereck(double[] A, double[] B, String name) throws ViereckException {super(A, B, name);}
 	
-	public Konvexes_Viereck() {super();}
+//	public Konvexes_Viereck() {super();}
 	
 	public void eigenschaften() {
 		System.out.println("Eigenschaften von einem "+name+":");

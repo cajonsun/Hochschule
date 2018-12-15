@@ -6,7 +6,7 @@ public class Trapez extends Konvexes_Viereck {
 
 //	public Trapez(double[] A, double[] B, String name) throws ViereckException {super(A, B, name);}
 	
-	public Trapez() {super();}
+//	public Trapez() {super();}
 	
 	public void eigenschaften() {
 		super.eigenschaften();
