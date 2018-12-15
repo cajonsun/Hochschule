@@ -6,7 +6,6 @@ public class ViereckMain {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		String txt;	
 		Viereck v = null;
 		
 		try {
@@ -19,22 +18,14 @@ public class ViereckMain {
 				if (i==1) {v = new Konvexes_Viereck(a,b,c,d,"Konvexes Viereck");}
 				else if (i==2) {v = new Trapez(a,b,c,d,"Trapez");}
 				else if (i==3) {v = new Parallelogramm(a,b,c,"Parallelogramm");}
-				else if (i==4) {v = new Rechteck(a,b,"Rechteck");}
-				else if (i==5) {v = new Rhombus(a,b,"Rombus");}
-				else if (i==6) {v = new Quadrat(a,"Quadrat");}
-				else if (i>7){			
-					System.out.println("\nWas für eine Art von Viereck wollen sie erstellen: "+
-					"\nViereck: v Konvexes Viereck: kv Trapez: Parallelogramm: p\nRechteck: re "
-					+ "Rhombus: rh Quadrat: q");
-					System.out.print("Geben Sie ihr gewünschtes Viereck ein: ");
-					txt = scan.nextLine();
-					v = ScannerViereck.scan(txt);
+				else if (i==4) {v = new Rechteck(a,b,c,"Rechteck");}
+				else if (i==5) {v = new Rhombus(a,b,c,"Rombus");}
+				else if (i==6) {v = new Quadrat(a,b,"Quadrat");}
+				else if (i>=7){			
+					v = ScannerViereck.scan();
 				}
-
-
+				
 				v.print();
-				System.out.println("Der Umfang des "+v.name+" ist "+v.getUmfang());
-				System.out.println("Der Flächeninhalt des "+v.name+" ist "+v.getFlaeche());
 				v.eigenschaften();	
 			}
 

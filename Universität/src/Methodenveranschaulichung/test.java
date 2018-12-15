@@ -1,7 +1,7 @@
 package Methodenveranschaulichung;
 
 public class test {
- int a = 1;
+ static int a = 1;
 
 public int rueck2(int a) {
 	a = a+1;

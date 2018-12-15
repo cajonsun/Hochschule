@@ -86,8 +86,10 @@ public abstract class Viereck {
 	//Gibt die einzelnen Seitenlengen des Vierecks wieder 
 	public void print() {
 		System.out.println("\nDie Seitenlängen des "+name+" sind:");
-		System.out.println("A: "+seiteAB+"\tB: "+seiteBC);
-		System.out.println("C: "+seiteCD+"\tD: "+seiteAD);
+		System.out.println("AB: "+seiteAB+"\tBC: "+seiteBC);
+		System.out.println("CD: "+seiteCD+"\tAD: "+seiteAD);
+		System.out.println("Der Umfang des "+name+" ist "+getUmfang());
+		System.out.println("Der Flächeninhalt des "+name+" ist "+getFlaeche());
 	}
 	
 	public abstract void eigenschaften() ;
