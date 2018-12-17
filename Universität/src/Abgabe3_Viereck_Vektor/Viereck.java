@@ -68,11 +68,11 @@ public abstract class Viereck {
 	//Gibt den Typen, die einzelnen Seitenlaengen, den Flaecheninhalt und
 	//den Umfang des Vierecks wieder 
 	public void print() {
-		System.out.println("\nDie Seitenlängen des "+name+" sind:");
+		System.out.println(name);
 		System.out.println("AB: "+seiteAB+"\tBC: "+seiteBC);
 		System.out.println("CD: "+seiteCD+"\tAD: "+seiteAD);
-		System.out.println("Der Umfang des "+name+" ist "+getUmfang());
-		System.out.println("Der Flächeninhalt des "+name+" ist "+getFlaeche());
+		System.out.println("Umfang: "+getUmfang());
+		System.out.println("Fläche: "+getFlaeche());
 	}
 	
 	public abstract void eigenschaften() ;
