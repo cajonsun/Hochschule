@@ -1,9 +1,9 @@
 package Abgabe3_Viereck_Vektor;
 
 public class Quadrat extends Rhombus {
-	public Quadrat(double[] A, double[] B, String name) throws ViereckException {super(A, B, null, name);	}
-	
-//	public Quadrat() {super();}
+	public Quadrat(double[] A, double[] B, String name) throws ViereckException {
+		super(A, B, null, name);	
+	}
 	
 	//Berechnet die Flaeche des Vierecks
 	public double getFlaeche() {

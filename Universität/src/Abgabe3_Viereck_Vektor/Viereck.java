@@ -26,22 +26,6 @@ public abstract class Viereck {
 		}
 	}
 
-//	public Viereck(double[] punktA,double[] punktB, String name) throws ViereckException {
-//		this.punktA = punktA;
-//		this.punktB = punktB;
-//		this.name	= name;
-//		seiteAB = getSeitenlaenge(punktA, punktB);
-//		seiteBC = getSeitenlaenge(punktB, punktC);
-//	}
-//	
-//	public Viereck(double[] punktA, String name) throws ViereckException {
-//		this.punktA = punktA;
-//		this.name	= name;
-//		seiteAB = getSeitenlaenge(punktA, punktB);
-//	}
-	
-//	public Viereck() {}
-
 	//Methoden
 	
 	//Berechnet die einzelnen Seitenlaengen
@@ -65,7 +49,6 @@ public abstract class Viereck {
 		double alpha = getWinkel(a, b, c);
 		
 		return Math.sin(alpha)*getSeitenlaenge(b, c);
-		
 	}
 	
 	//Gibt den Umfang des Viereck aus
@@ -80,10 +63,10 @@ public abstract class Viereck {
 		double flaeche2 = 0.5*getHoehe(punktC, punktD, punktA)*getSeitenlaenge(punktC, punktD);
 		
 		return flaeche1+flaeche2;
-
 	}
 	
-	//Gibt die einzelnen Seitenlengen des Vierecks wieder 
+	//Gibt den Typen, die einzelnen Seitenlaengen, den Flaecheninhalt und
+	//den Umfang des Vierecks wieder 
 	public void print() {
 		System.out.println("\nDie Seitenlängen des "+name+" sind:");
 		System.out.println("AB: "+seiteAB+"\tBC: "+seiteBC);

@@ -1,9 +1,9 @@
 package Abgabe3_Viereck_Vektor;
 
 public class Parallelogramm extends Trapez {
-	public Parallelogramm(double[] A, double[] B, double[] C, String name) throws ViereckException {super(A, B, C, null, name);}
-
-//	public Parallelogramm() {super();}
+	public Parallelogramm(double[] A, double[] B, double[] C, String name) throws ViereckException {
+		super(A, B, C, null, name);
+	}
 
 	//Berechnet die Flaechen der Hilfsdreiecke des Vierecks und gibt den Flaecheninhalt
 	//des Vierecks zurueck 
