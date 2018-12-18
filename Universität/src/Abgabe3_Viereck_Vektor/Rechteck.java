@@ -5,6 +5,12 @@ public class Rechteck extends Parallelogramm {
 		super(A, B, C, name);
 	}
 
+	public void pospruef() throws ViereckException {
+		if (punktA[0]>=punktB[0] || punktB[1]>=punktC[1] || punktA[1]!=punktB[1] || punktB[0]!=punktC[0]) {
+			throw new ViereckException(ViereckException.POSITION);
+		}
+	}	
+		
 	//Berechnet die Flaeche des Vierecks
 	public double getFlaeche() {
 		return seiteAB*seiteBC;

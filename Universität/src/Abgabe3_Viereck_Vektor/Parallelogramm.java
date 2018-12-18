@@ -5,10 +5,16 @@ public class Parallelogramm extends Trapez {
 		super(A, B, C, null, name);
 	}
 
+	public void pospruef() throws ViereckException {
+		if (punktA[0]>=punktB[0] || punktB[1]>=punktC[1]) {
+			throw new ViereckException(ViereckException.POSITION);
+		}
+	}
+	
 	//Berechnet die Flaechen der Hilfsdreiecke des Vierecks und gibt den Flaecheninhalt
 	//des Vierecks zurueck 
 	public double getFlaeche() {
-		return getHoehe(punktA, punktB, punktC)*getSeitenlaenge(punktB, punktC);
+		return getHoehe(punktA, punktB, punktC)*getSeitenlaenge(punktA, punktB);
 	}
 	
 	//Gibt den Umfang des Vierecks aus
@@ -17,10 +23,11 @@ public class Parallelogramm extends Trapez {
 	}
 	
 	public void print() {
-		System.out.println("\nDie Seitenlängen des "+name+" sind:");
-		System.out.println("AB: "+seiteAB+"\tBC: "+seiteBC);
-		System.out.println("CD: "+seiteAB+"\tAD: "+seiteBC);
-		System.out.println("Der Umfang des "+name+" ist "+getUmfang());
-		System.out.println("Der Flächeninhalt des "+name+" ist "+getFlaeche());
+		System.out.println("\n"+name);
+		System.out.print("PunktA["+getPunktPos(punktA,0)+","+getPunktPos(punktA, 1)+"]");
+		System.out.println("\tPunktB["+getPunktPos(punktB,0)+","+getPunktPos(punktB, 1)+"]");
+		System.out.println("PunktC["+getPunktPos(punktC,0)+","+getPunktPos(punktC, 1)+"]");
+		System.out.println("Umfang: "+getUmfang());
+		System.out.println("Fläche: "+getFlaeche());
 	}
 }

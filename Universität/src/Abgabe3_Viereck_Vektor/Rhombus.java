@@ -5,6 +5,12 @@ public class Rhombus extends Parallelogramm {
 		super(A, B, C, name); 
 	}
 
+	public void pospruef() throws ViereckException {
+		if (punktA[0]>=punktB[0] || punktB[1]>=punktC[1] || seiteAB!=seiteBC) {
+			throw new ViereckException(ViereckException.POSITION);
+		}
+	}
+		
 	//Berechnet den Umfang des Vierecks
 	public double getUmfang() {
 		return 4 * seiteAB;
