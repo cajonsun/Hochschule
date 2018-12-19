@@ -71,7 +71,15 @@ public class Texteinlesen {
 		count = 0;
 	}
 	
-	public void sort() {
-		Collections.sort(sortList, new Sortierer());
+	/**
+	 * 
+	 */
+	public void sortInsens() {
+		Collections.sort(sortList);
+		Collections.sort(sortList, String.CASE_INSENSITIVE_ORDER);
+	}
+
+	public void sortSens() {
+		Collections.sort(sortList);
 	}
 }

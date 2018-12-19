@@ -18,8 +18,8 @@ public class ViereckException extends Exception{
 		switch(typ) {
 		case 1: txt = "Die Zahl ist negativ du bitch. Tu doch nicht machen auf so dumm";
 				break;
-//		case 2: txt = "Die Zahl ist nicht im angegebenen Bereich";
-//				break;
+		case 2: txt = "Die Zahl ist nicht im angegebenen Bereich";
+				break;
 		case 3: txt = "Punkte falsch ausgewählt"	;
 				break;
 		default: txt ="Es ist ein unbekannter Fehler aufgetreten";

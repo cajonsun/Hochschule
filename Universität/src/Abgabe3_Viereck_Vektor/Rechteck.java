@@ -6,8 +6,13 @@ public class Rechteck extends Parallelogramm {
 	}
 
 	public void pospruef() throws ViereckException {
-		if (punktA[0]>=punktB[0] || punktB[1]>=punktC[1] || punktA[1]!=punktB[1] || punktB[0]!=punktC[0]) {
+		if (punktA[0]>=punktB[0] || punktB[1]>=punktC[1]) {
 			throw new ViereckException(ViereckException.POSITION);
+		}
+		double winkel = ((getWinkel(punktA, punktB, punktC)*180)/Math.PI);
+		winkel = Math.round(winkel);
+		if (winkel!=90) {
+			throw new ViereckException(ViereckException.WINKEL);			
 		}
 	}	
 		

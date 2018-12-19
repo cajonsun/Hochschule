@@ -22,12 +22,11 @@ public class TexteinlesenMain {
 		System.out.println("Wollen Sie zwischen Groﬂ- und Kleinschreibung unterscheiden?<j> <n>");
 		String abfrage = scan.next();
 		if (abfrage.equals("j")) {
-			unterscheiden = true;
+			text.sortSens();
 		} else {
-			unterscheiden = false;
+			text.sortInsens();
 		}
 		
-		text.sort();
 		System.out.println("--------------------------------"
 				+ "\nSortierter Teil:\n");
 		text.ausgeben();
