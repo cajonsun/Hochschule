@@ -16,7 +16,7 @@ public class ViereckException extends Exception{
 	public String toString() {
 		String txt;
 		switch(typ) {
-		case 1: txt = "Die Zahl ist negativ du bitch. Tu doch nicht machen auf so dumm";
+		case 1: txt = "Die Zahl ist negativ";
 				break;
 		case 2: txt = "Die Zahl ist nicht im angegebenen Bereich";
 				break;

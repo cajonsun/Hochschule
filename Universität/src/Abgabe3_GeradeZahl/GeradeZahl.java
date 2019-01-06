@@ -3,7 +3,7 @@ package Abgabe3_GeradeZahl;
 public class GeradeZahl {
 	int zahl;	
 	int bereichMin = 5;
-	int bereichMax = 50;
+	int bereichMax = 1000;
 	
 	public GeradeZahl(int zahl) throws ZahlException {
 		if (zahl>=bereichMin && zahl<=bereichMax) {		 	

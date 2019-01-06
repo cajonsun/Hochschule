@@ -8,11 +8,12 @@ public class GeradeZahlMain {
 	public static void main(String[] args) {
 		try {
 			Scanner scan = new Scanner(System.in);
-			System.out.println("Gebe die erste Zahl ein, du Hure:");
+			System.out.println("Gebe Sie zwei geraden Zahlen, zwischen 5 und 1000, ein:");
+			System.out.print("Zahl1: ");
 			int zahl1 = scan.nextInt();
 			GeradeZahl gz1 = new GeradeZahl(zahl1);
 			
-			System.out.println("Gebe die zweite Zahl ein, du Hure:");
+			System.out.print("Zahl2: ");
 			int zahl2 = scan.nextInt();
 			GeradeZahl gz2 = new GeradeZahl(zahl2);
 			
@@ -38,6 +39,5 @@ public class GeradeZahlMain {
 //			System.out.println(zex.toString());			
 		}
 		
-		System.out.println("Hannes katze stinkt nach Kot");
 	}
 }

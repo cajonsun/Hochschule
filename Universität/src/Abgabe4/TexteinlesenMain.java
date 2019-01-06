@@ -7,7 +7,6 @@ public class TexteinlesenMain {
 	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		//boolean unterscheiden;
 		
 //		String file = "C:\\Users\\oleja\\OneDrive\\Dokumente\\Programmieren1\\Abgabeordner\\Abgabe4\\Tageschautext.txt";
 		String file = "C:\\Users\\Ole\\OneDrive\\Dokumente\\Programmieren1\\Abgabeordner\\Abgabe4\\Tageschautext2.txt";

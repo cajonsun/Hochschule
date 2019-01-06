@@ -29,7 +29,7 @@ public class ScannerViereck {
 		}
 		
 		if (txt == 1 || txt==2 ) {
-			System.out.println("Geben Sie die Koordinaten von 4 Punkte an und ");
+			System.out.println("\nGeben Sie die Koordinaten von 4 Punkte an und ");
 			System.out.println("zwar von links unten und dann weiter gegen ");
 			System.out.println("den Uhrzeigersinn. Deklaration: Punkt[x,y].");
 			try {
@@ -72,7 +72,7 @@ public class ScannerViereck {
 		}
 		
 		if (txt==3 || txt==4 || txt==5) {
-			System.out.println("Geben Sie die Koordinaten von 3 Punkte an und ");
+			System.out.println("\nGeben Sie die Koordinaten von 3 Punkte an und ");
 			System.out.println("zwar von links unten und dann weiter gegen ");
 			System.out.println("den Uhrzeigersinn. Deklaration: Punkt[x,y].");
 			System.out.print("x1: ");
@@ -108,7 +108,7 @@ public class ScannerViereck {
 		
 		if (txt==6) {
 			
-			System.out.println("Geben Sie die Koordinaten von 2 Punkte an und ");
+			System.out.println("\nGeben Sie die Koordinaten von 2 Punkte an und ");
 			System.out.println("zwar von links unten und dann weiter gegen ");
 			System.out.println("den Uhrzeigersinn. Deklaration: Punkt[x,y].");
 			System.out.print("x1: ");

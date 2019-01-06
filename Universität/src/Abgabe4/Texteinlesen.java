@@ -9,10 +9,10 @@ import java.util.Collections;
 public class Texteinlesen {
 
 	//Instanzvariablen
-	private File 		file;
-	private Scanner 	scan;
-	private String 		temp;
-	private int 		count = 0;
+	private File 		 file;
+	private Scanner 	 scan;
+	private String 		 temp;
+	private int 		 count = 0;
 	private List<String> sortList = new ArrayList<String>();
 	
 	//Konstruktor

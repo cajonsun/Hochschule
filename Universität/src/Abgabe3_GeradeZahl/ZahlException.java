@@ -16,7 +16,7 @@ public class ZahlException extends Exception {
 	public String toString() {
 		String txt;
 		switch(typ) {
-		case 1: txt = "Die Zahl ist ungerade du bitch. Tu doch nicht machen auf so dumm";
+		case 1: txt = "Die Zahl ist ungerade";
 				break;
 		case 2: txt = "Die Zahl ist nicht im angegebenen Bereich";
 				break;

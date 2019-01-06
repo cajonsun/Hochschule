@@ -39,7 +39,7 @@ public abstract class Viereck {
 		return Math.sqrt((x*x)+(y*y));
 	}
 	
-	//Gibt den Winkel zwischen seiteAB und seiteAD wieder
+	//Gibt den Winkel zwischen seiteAB und seiteAC wieder
 	protected double getWinkel(double[] a, double[] b, double[] c) {
 		double hseiteAB  = getSeitenlaenge(a, b);
 		double hseiteAC  = getSeitenlaenge(a, c);

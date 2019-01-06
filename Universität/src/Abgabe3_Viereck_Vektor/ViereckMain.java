@@ -38,6 +38,6 @@ public class ViereckMain {
 			}
 		}
 		scan.close();
-		System.out.println("Hannes riecht am Klodeckel");
+//		System.out.println("Hannes riecht am Klodeckel");
 	}
 }
