@@ -13,12 +13,15 @@ public class ViereckException extends Exception{
 		this.typ = typ;
 	}
 	
+	/**
+	 * Gibt eine bestimmte Fehlermeldung aus
+	 */
 	public String toString() {
 		String txt;
 		switch(typ) {
 		case 1: txt = "Die Zahl ist negativ";
 				break;
-		case 2: txt = "Die Zahl ist nicht im angegebenen Bereich";
+		case 2: txt = "Der Winkel ist nicht 90 Grad";
 				break;
 		case 3: txt = "Punkte falsch ausgewählt"	;
 				break;

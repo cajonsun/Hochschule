@@ -6,8 +6,11 @@ public class Trapez extends Konvexes_Viereck {
 		super(A, B, C, D, name);
 	}
 
+	/**
+	 * Beschreibt die Eigenschaften des Trapezes
+	 */
 	public void eigenschaften() {
 		super.eigenschaften();
-		System.out.println("-Zwei Seiten sind parallel");
+		System.out.println("-Zwei gegenüberliegende Seiten sind parallel");
 	}
 }

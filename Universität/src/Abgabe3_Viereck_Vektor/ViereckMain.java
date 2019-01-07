@@ -7,20 +7,19 @@ public class ViereckMain {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		Viereck v = null;
-		double[] a = {0,1};
-		double[] b = {1,1};
-		double[] c = {1,2};
-		double[] d = {0,2};
-		
+		double[] p1  = {0,0}, p2  = {1,0}, p3  = {2,0};
+		double[] p4  = {2,1}, p5  = {2,2}, p6  = {1,3};
+		double[] p7  = {1,2}, p8  = {0,1}, p9  = {0,2};
+		         
 		for (int i = 1; i < 12; i++) {
 			try {
 					
-					if (i==1) {v = new Konvexes_Viereck(a,b,c,d,"Konvexes Viereck");}
-					else if (i==2) {v = new Trapez(a,b,c,d,"Trapez");}
-					else if (i==3) {v = new Parallelogramm(a,b,c,"Parallelogramm");}
-					else if (i==4) {v = new Rechteck(a,b,c,"Rechteck");}
-					else if (i==5) {v = new Rhombus(a,b,c,"Rombus");}
-					else if (i==6) {v = new Quadrat(a,b,"Quadrat");}
+					if (i==1) {v = new Konvexes_Viereck(p1,p3,p5,p9,"Konvexes Viereck");}
+					else if (i==2) {v = new Trapez(p1,p5,p6,p8,"Trapez");}
+					else if (i==3) {v = new Parallelogramm(p2,p4,p5,"Parallelogramm");}
+					else if (i==4) {v = new Rechteck(p1,p3,p7,"Rechteck");}
+					else if (i==5) {v = new Rhombus(p1,p3,p5,"Rombus");}
+					else if (i==6) {v = new Quadrat(p1,p2,"Quadrat");}
 					else if (i>=7){			
 						v = ScannerViereck.scan();
 					}
