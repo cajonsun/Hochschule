@@ -12,7 +12,8 @@ public class Texteinlesen {
 	private File 		 file;
 	private Scanner 	 scan;
 	private String 		 temp;
-	private int 		 count = 0;
+	private int 		 count  = 0;
+	boolean 			abfrage = false;
 	private List<String> sortList = new ArrayList<String>();
 	
 	//Konstruktor
@@ -27,11 +28,17 @@ public class Texteinlesen {
 		
 	//Methoden
 	
+	/**
+	 * Ließt die einzelnen Wörter des Textes ein, löscht alle 
+	 * Sonderzeichen und ähnliches und speichert sie dann in
+	 * einer Liste ab
+	 */
 	public void einlesen() {
 		
 		//die Schleife läuft solange, bis sie bei der letzten Zeile
 		//der einzulesenden Datei angekommen ist
 		while(scan.hasNext()) {
+			
 			//ließt ein Token ein, also bis ein Leerzeichen kommt
 			String temperrari = scan.next(); 
 			
@@ -47,18 +54,26 @@ public class Texteinlesen {
 		}
 	}
 	
-	//Gibt alle Elemente der Liste aus
+	/**
+	 * Gibt alle Elemente der Liste aus
+	 */
 	public void ausgeben() {
 		for (String element : sortList) {
 				System.out.println(element);
 		}
 	}
 	
-	//Gibt alle Elemente der Liste aus
+	/**
+	 * Gibt alle Elemente der Liste aus mit der Anzahl
+	 */
 	public void ausgebenAnzahl() {
 		temp = "";
 		for (String element : sortList) {
-//			element = element.toLowerCase();
+			
+			if(!abfrage) {
+			element = element.toLowerCase();
+			}
+			
 			if (element.equals(temp) || temp.equals("")) {
 				count++;
 			} else {
@@ -72,14 +87,19 @@ public class Texteinlesen {
 	}
 	
 	/**
-	 * 
+	 * Sortiert die Liste ohne auf Groß- und Kleinschreibung zu achten
 	 */
 	public void sortInsens() {
 		Collections.sort(sortList);
 		Collections.sort(sortList, String.CASE_INSENSITIVE_ORDER);
+		abfrage = false;
 	}
 
+	/**
+	 * Sortiert die Liste und achtet dabei auf Groß- und Kleinschreibung
+	 */
 	public void sortSens() {
 		Collections.sort(sortList);
+		abfrage = true;
 	}
 }

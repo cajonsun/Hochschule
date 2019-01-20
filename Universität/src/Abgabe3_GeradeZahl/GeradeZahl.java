@@ -1,10 +1,13 @@
 package Abgabe3_GeradeZahl;
 
 public class GeradeZahl {
-	int zahl;	
-	int bereichMin = 5;
-	int bereichMax = 1000;
 	
+	//Instanzvariablen
+	int zahl;	
+	int bereichMin = 1;
+	int bereichMax = 100;
+	
+	//Konstruktor
 	public GeradeZahl(int zahl) throws ZahlException {
 		if (zahl>=bereichMin && zahl<=bereichMax) {		 	
 			if (zahl%2 == 0) {
@@ -17,15 +20,26 @@ public class GeradeZahl {
 		}
 	}
 	
-	public GeradeZahl add(GeradeZahl gz2) throws ZahlException {
+	//Methoden
+	
+	/**
+	 * Addiert zwei gerade Zahlen
+	 * @param gz2	Objekt einer Gerade Zahl, die addiert werden soll
+	 * @return		Gibt das Ergebnis der Addition zurück
+	 */
+	public int add(GeradeZahl gz2) {
 		int erg = zahl+gz2.zahl;		
-		GeradeZahl ergebnis = new GeradeZahl(erg);
-		return ergebnis;
+		return erg;
 	}
 	
-	public GeradeZahl mult(GeradeZahl gz2) throws ZahlException {
-		GeradeZahl	ergebnis = new GeradeZahl(zahl*gz2.zahl);
-		return ergebnis;
+	/**
+	 * Multipliziert zwei gerade Zahlen
+	 * @param gz2	Objekt einer Gerade Zahl, die multipliziert werden soll
+	 * @return		Gibt das Ergebnis der Multiplikation zurück
+	 */
+	public int mult(GeradeZahl gz2) {
+		int erg = zahl*gz2.zahl;
+		return erg;
 	}
 
 

@@ -28,10 +28,6 @@ public abstract class Viereck implements Formeln{
 
 	//Methoden
 	
-//	protected double getPunktPos(double[] p, int ipos) {
-//		return p[ipos];
-//	}
-	
 	/**
 	 * Berechnet die Seitenlaenge zwischen den beiden eingegebenen Punkten
 	 * @param a Erster Punkt
