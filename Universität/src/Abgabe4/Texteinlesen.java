@@ -6,6 +6,12 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * Aufgabe zu Kapitel 10
+ * @author Ole Jacobsen
+ *
+ */
+
 public class Texteinlesen {
 
 	//Instanzvariablen

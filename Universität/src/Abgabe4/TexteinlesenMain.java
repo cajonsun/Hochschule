@@ -1,7 +1,11 @@
 package Abgabe4;
 
 import java.util.Scanner;
-
+/**
+ * Aufgabe zu Kapitel 10
+ * @author Ole Jacobsen
+ *
+ */
 public class TexteinlesenMain {
 	
 	public static void main(String[] args) {

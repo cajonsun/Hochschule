@@ -3,6 +3,11 @@ package Abgabe3_GeradeZahl;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * Aufgabe zu Kapitel 8
+ * @author Ole Jacobsen
+ *
+ */
 public class GeradeZahlMain {
 
 	public static void main(String[] args) {

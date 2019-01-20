@@ -2,6 +2,11 @@ package Abgabe3_Viereck_Vektor;
 
 import java.util.Scanner;
 
+/**
+ * Aufgabe zu Kapitel 7
+ * @author Ole Jacobsen
+ *
+ */
 public class ViereckMain {
 
 	public static void main(String[] args) {

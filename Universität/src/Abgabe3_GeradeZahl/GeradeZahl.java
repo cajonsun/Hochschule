@@ -1,5 +1,11 @@
 package Abgabe3_GeradeZahl;
 
+/**
+ * Aufgabe zu Kapitel 8
+ * @author Ole Jacobsen
+ *
+ */
+
 public class GeradeZahl {
 	
 	//Instanzvariablen
