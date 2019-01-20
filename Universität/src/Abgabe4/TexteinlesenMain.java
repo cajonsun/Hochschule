@@ -7,8 +7,8 @@ public class TexteinlesenMain {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-//		String file = "C:\\Users\\oleja\\OneDrive\\Dokumente\\Programmieren1\\Abgabeordner\\Abgabe 3+4\\Tageschautext.txt";
-		String file = "C:\\Users\\Ole\\OneDrive\\Dokumente\\Programmieren1\\Abgabeordner\\Abgabe 3+4\\Tageschautext2.txt";
+//		String file = "C:\\Users\\oleja\\OneDrive\\Dokumente\\Programmieren1\\Abgabeordner\\Abgabe 3+4\\Texteinlesen\\Tageschautext.txt";
+		String file = "C:\\Users\\Ole\\OneDrive\\Dokumente\\Programmieren1\\Abgabeordner\\Abgabe 3+4\\Texteinlesen\\Tageschautext.txt";
 		Texteinlesen text = new Texteinlesen(file);
 		
 		//Ausgabe des unsortierten Textes
